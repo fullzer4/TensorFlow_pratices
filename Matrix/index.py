@@ -1,5 +1,7 @@
 import tensorflow as tf
 
+print(tf.__version__)
+
 Matrix_one = tf.constant([[1,2,3],[2,3,4],[3,4,5]])
 Matrix_two = tf.constant([[2,2,2],[2,2,2],[2,2,2]])
 
@@ -9,8 +11,6 @@ def add():
 
 def mathmul():
   return tf.matmul(Matrix_one, Matrix_two)
-
-
 
 print ("Defined using tensorflow function :")
 add_1_operation = add()
